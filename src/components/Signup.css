@@ -1,0 +1,104 @@
+/* Container */
+.signup-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ec4899, #764ba2); /* Purple-Pink Gradient */
+  padding: 20px;
+}
+
+/* Signup Form */
+.signup-form {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.signup-form h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+/* Input Fields */
+.signup-form input, 
+.signup-form select {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.signup-form input:focus, 
+.signup-form select:focus {
+  border-color: #34D399;
+  box-shadow: 0px 0px 5px rgba(52, 211, 153, 0.5);
+  outline: none;
+}
+
+/* Role Selection */
+.signup-form label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #555;
+  display: block;
+  margin: 0.5rem 0 0.25rem;
+}
+
+.signup-form select {
+  background: #f9f9f9;
+  cursor: pointer;
+}
+
+/* Submit Button */
+.signup-form button {
+  background-color: #6448cc;
+  color: #ffffff;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 6px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.signup-form button:hover {
+  background-color: #10B981;
+  transform: scale(1.02);
+}
+
+/* Success/Error Message */
+.text-green-500 {
+  color: #10B981;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.text-red-500 {
+  color: #EF4444;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
